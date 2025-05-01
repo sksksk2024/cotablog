@@ -1,10 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import Email from './utils/Email';
-import Phone from './utils/Phone';
-import WingsLogo from './utils/WingsLogo';
-import CotaLogo from './svgs/CotaLogo';
+import Phone from './svgs/Phone';
+import Email from './svgs/Email';
+import WingsLogo from './svgs/WingsLogo';
+import CotaLogoFooter from './svgs/CotaLogoFooter';
 
 const Footer = () => {
   return (
@@ -47,7 +47,7 @@ const Footer = () => {
           className={`text-2xl text-start font-bold
             `}
         >
-          Contact Me
+          Other Platforms
         </h2>
         <div className="flex flex-col justify-center items-center gap-12 md:flex-row">
           <div className="flex justify-around items-center gap-10">
@@ -56,7 +56,7 @@ const Footer = () => {
               <WingsLogo />
             </Link>
             <Link target="_blank" href="my-website" passHref>
-              <CotaLogo /> {/*A modified logo that rotates when hovered*/}
+              <CotaLogoFooter />
             </Link>
           </div>
         </div>

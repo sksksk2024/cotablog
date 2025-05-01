@@ -8,8 +8,8 @@ import {
 } from '@/components/motionVariants/motionVariants';
 import Image from 'next/image';
 import notFoundMe from '@/images/notFoundMe.webp';
-import Sun from '@/components/utils/Sun';
-import Moon from '@/components/utils/Moon';
+import Sun from '@/components/svgs/Sun';
+import Moon from '@/components/svgs/Moon';
 import Link from 'next/link';
 import CotaLogo from '@/components/svgs/CotaLogo';
 

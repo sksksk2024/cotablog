@@ -4,9 +4,9 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-import { buttonVariants, ulVariants } from './motionVariants/motionVariants';
-import BurgerMenu from './utils/BurgerMenu';
-import XMenu from './utils/XMenu';
+import { ulVariants } from './motionVariants/motionVariants';
+import XMenu from './svgs/XMenu';
+import BurgerMenu from './svgs/BurgerMenu';
 
 const Guide = () => {
   const [, setScrolled] = useState(false);
@@ -61,9 +61,9 @@ const Guide = () => {
         {openSideBar &&
           navItems.map((label) => (
             <motion.li className={liClasses} key={label}>
-              <motion.button disabled className={contentClasses}>
+              <Link href={getLinkPath(label)} className={contentClasses}>
                 {label}
-              </motion.button>
+              </Link>
             </motion.li>
           ))}
       </motion.ul>

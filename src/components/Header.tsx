@@ -1,10 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { sunVariants, moonVariants } from './motionVariants/motionVariants';
+import { sunVariants } from './motionVariants/motionVariants';
 import CotaLogo from './svgs/CotaLogo';
-import Sun from './utils/Sun';
-import Moon from './utils/Moon';
+import Sun from './svgs/Sun';
+// import Moon from './svgs/Moon';
 
 const Header = () => {
   return (

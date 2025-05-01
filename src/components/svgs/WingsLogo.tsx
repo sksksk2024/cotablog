@@ -1,4 +1,4 @@
-import AnimatedSVG from './AnimatedSVG';
+import AnimatedSVG from '../utils/AnimatedSVG';
 
 const WingsLogo = () => {
   return (

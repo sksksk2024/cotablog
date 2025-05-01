@@ -46,6 +46,7 @@ const AnimatedSVG: React.FC<AnimatedSVGProps> = ({
         initial="hidden"
         animate="visible"
         whileHover="hover"
+        aria-label={label}
       >
         <motion.path
           d={pathData}
