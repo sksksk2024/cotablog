@@ -16,7 +16,7 @@
 
 <p align="center">
   <img src="./design/desktop-preview.png" alt="Desktop Preview" width="300"/>
-  <img src="./design/mobile-preview-light.png" alt="Mobile Preview" width="150"/>
+  <img src="./design/mobile-preview.png" alt="Mobile Preview" width="150"/>
 </p>
 
 ---
@@ -27,7 +27,7 @@
 
 🎯
 
-- HTML lesson:
+- HTML:
   - close component with this shortcut: CTRL + Shift + {
   - open component with this shortcut: CTRL + Shift + }
 - If you take a finished project, then modify it quite much, then you should delete the backend, and other components that you don't want(don't work yet)
