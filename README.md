@@ -27,10 +27,10 @@
 
 🎯
 
-- Planning good design patterns
-- Being consistent with my style overall
-- Adding email send functionality
-- Being patient through the process(difficult to stay consistent on one single website)
+- HTML lesson:
+  - close component with this shortcut: CTRL + Shift + {
+  - open component with this shortcut: CTRL + Shift + }
+- If you take a finished project, then modify it quite much, then you should delete the backend, and other components that you don't want(don't work yet)
 
 ---
 
