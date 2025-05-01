@@ -1,0 +1,68 @@
+'use client';
+
+import Link from 'next/link';
+import Email from './utils/Email';
+import Phone from './utils/Phone';
+import WingsLogo from './utils/WingsLogo';
+import CotaLogo from './svgs/CotaLogo';
+
+const Footer = () => {
+  return (
+    <footer
+      id="explore"
+      className={`z-10 flex flex-col justify-center items-center py-64P sm:px-64P pb-0 gap-20 text-white bg-background-dark h-full
+    `}
+    >
+      <div className="flex flex-col justify-center items-center gap-5 text-center">
+        <h2
+          className={`text-2xl text-start font-bold
+            `}
+        >
+          Contact Me
+        </h2>
+        <div
+          className={`flex flex-col justify-center items-center gap-5 md:flex-row md:gap-12
+        `}
+        >
+          <button
+            className={`select-text text-xl font-bold flex justify-start items-center gap-2 cursor-pointer text-white hover:text-warning
+          `}
+          >
+            <Phone />
+            +40-770-753-746 {/* Business Number */}
+          </button>
+          <button
+            className={`select-text text-xl font-bold flex justify-start items-center gap-2 cursor-pointer
+                text-white hover:text-warning
+            `}
+          >
+            <Email />
+            cota8091@gmail.com {/* Business Email */}
+          </button>
+        </div>
+      </div>
+
+      <div className="flex flex-col justify-center items-center gap-5 text-center">
+        <h2
+          className={`text-2xl text-start font-bold
+            `}
+        >
+          Contact Me
+        </h2>
+        <div className="flex flex-col justify-center items-center gap-12 md:flex-row">
+          <div className="flex justify-around items-center gap-10">
+            {/* LINKS A BIT ROTATED WHEN HOVERED */}
+            <Link target="_blank" href="wings-website" passHref>
+              <WingsLogo />
+            </Link>
+            <Link target="_blank" href="my-website" passHref>
+              <CotaLogo /> {/*A modified logo that rotates when hovered*/}
+            </Link>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
