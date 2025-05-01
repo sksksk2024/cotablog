@@ -3,13 +3,11 @@
 import { motion } from 'framer-motion';
 import {
   buttonVariants,
-  moonVariants,
   sunVariants,
 } from '@/components/motionVariants/motionVariants';
 import Image from 'next/image';
 import notFoundMe from '@/images/notFoundMe.webp';
 import Sun from '@/components/svgs/Sun';
-import Moon from '@/components/svgs/Moon';
 import Link from 'next/link';
 import CotaLogo from '@/components/svgs/CotaLogo';
 

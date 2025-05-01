@@ -16,9 +16,9 @@ const Guide = () => {
     text-white bg-green-dark hover:text-background-dark hover:bg-warning
   `;
 
-  const disabledClasses = `rounded-5BR cursor-not-allowed font-bold tracking-wide text-white bg-gray-500`;
-  const contentDisabledClasses =
-    'px-16P py-8P w-full h-full flex items-center justify-center';
+  // const disabledClasses = `rounded-5BR cursor-not-allowed font-bold tracking-wide text-white bg-gray-500`;
+  // const contentDisabledClasses =
+  //   'px-16P py-8P w-full h-full flex items-center justify-center';
   const contentClasses =
     'px-16P py-8P w-full h-full flex items-center justify-center cursor-pointer';
 

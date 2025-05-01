@@ -27,9 +27,9 @@ const FirstBlog = () => {
           culpa, quasi laborum maxime qui suscipit!
         </p>
         <p>
-          This is just the beginning. I'm using this space to explore ideas,
-          share my journey, and document everything I'm learning—from
-          calisthenics to JavaScript and beyond.
+          This is just the beginning. I&apos;m using this space to explore
+          ideas, share my journey, and document everything I&apos;m
+          learning—from calisthenics to JavaScript and beyond.
         </p>
       </section>
 
