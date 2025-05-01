@@ -33,7 +33,7 @@ const Header = () => {
             text-white
             `}
         >
-          Cota Blog!
+          Coța Blog!
         </h1>
 
         <motion.div

@@ -10,12 +10,12 @@ const Footer = () => {
   return (
     <footer
       id="explore"
-      className={`z-10 flex flex-col justify-center items-center py-64P sm:px-64P pb-0 gap-20 text-white bg-background-dark h-full
+      className={`z-10 flex flex-col justify-center items-center py-64P sm:px-64P pb-0 gap-20 text-white bg-black h-full
     `}
     >
       <div className="flex flex-col justify-center items-center gap-5 text-center">
         <h2
-          className={`text-2xl text-start font-bold
+          className={`text-xl xs:text-2xl text-start font-bold
             `}
         >
           Contact Me
@@ -25,14 +25,14 @@ const Footer = () => {
         `}
         >
           <button
-            className={`select-text text-xl font-bold flex justify-start items-center gap-2 cursor-pointer text-white hover:text-warning
+            className={`select-text text-lg xs:text-xl font-bold flex justify-start items-center gap-2 cursor-pointer text-white hover:text-warning
           `}
           >
             <Phone />
             +40-770-753-746 {/* Business Number */}
           </button>
           <button
-            className={`select-text text-xl font-bold flex justify-start items-center gap-2 cursor-pointer
+            className={`select-text text-lg xs:text-xl font-bold flex justify-start items-center gap-2 cursor-pointer
                 text-white hover:text-warning
             `}
           >
@@ -42,23 +42,21 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center gap-5 text-center">
+      <div className="flex flex-col justify-center items-center text-center">
         <h2
-          className={`text-2xl text-start font-bold
+          className={`text-xl xs:text-2xl text-start font-bold
             `}
         >
           Other Platforms
         </h2>
-        <div className="flex flex-col justify-center items-center gap-12 md:flex-row">
-          <div className="flex justify-around items-center gap-10">
-            {/* LINKS A BIT ROTATED WHEN HOVERED */}
-            <Link target="_blank" href="wings-website" passHref>
-              <WingsLogo />
-            </Link>
-            <Link target="_blank" href="my-website" passHref>
-              <CotaLogoFooter />
-            </Link>
-          </div>
+        <div className="flex justify-around items-center gap-10">
+          {/* LINKS A BIT ROTATED WHEN HOVERED */}
+          <Link target="_blank" href="wings-website" passHref>
+            <WingsLogo />
+          </Link>
+          <Link target="_blank" href="my-website" passHref>
+            <CotaLogoFooter />
+          </Link>
         </div>
       </div>
     </footer>

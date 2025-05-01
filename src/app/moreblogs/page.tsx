@@ -1,6 +1,6 @@
 import BlogSection from '@/components/BlogSection';
 
-const life = () => {
+const moreblogs = () => {
   return (
     <>
       <BlogSection />
@@ -8,4 +8,4 @@ const life = () => {
   );
 };
 
-export default life;
+export default moreblogs;

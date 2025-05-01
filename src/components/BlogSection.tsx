@@ -22,10 +22,10 @@ const BlogSection = () => {
   const [search, setSearch] = useState('');
 
   const blogPosts = [
-    { title: 'Roblox', href: '/life/roblox' },
-    { title: 'My First Blog', href: '/blog/myfirstblog' },
-    { title: 'Coding in 2025', href: '/blog/codingin2025' },
-    { title: 'Calisthenics Journey', href: '/blog/calisthenicsjourney' },
+    { title: '??', href: '/moreblogs/' },
+    { title: '?', href: '/moreblogs/' },
+    { title: '????', href: '/moreblogs/' },
+    { title: '???', href: '/moreblogs/' },
     // Add more as needed
   ];
 
@@ -41,7 +41,7 @@ const BlogSection = () => {
 
       {/* Search Bar */}
       <label
-        className={`relative group w-full `}
+        className={`relative group w-full min-w-container-300 max-w-container-600`}
         htmlFor="email"
         aria-label="Enter Email"
       >

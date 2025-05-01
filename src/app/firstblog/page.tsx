@@ -1,14 +1,15 @@
 'use client';
 
-import React from 'react';
+import { buttonVariants } from '@/components/motionVariants/motionVariants';
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 const FirstBlog = () => {
   return (
     <article className="w-full max-w-container-800 px-16P py-48P mx-auto flex flex-col gap-10 text-white">
       <header className="text-center space-y-4">
-        <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight leading-tight">
-          First Blog: A Fresh Start
+        <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight leading-tight">
+          First Blog: Welcome
         </h1>
         <p className="text-sm text-gray-400">Published on May 1, 2025</p>
       </header>
@@ -32,13 +33,16 @@ const FirstBlog = () => {
         </p>
       </section>
 
-      <footer className="pt-10 border-t border-gray-600 text-center">
-        <Link
-          href="/"
-          className="inline-block text-green-400 hover:underline hover:text-green-300 transition-colors"
+      <footer className="flex flex-col justify-center items-center pt-10 border-t border-gray-600 text-center">
+        <motion.button
+          variants={buttonVariants}
+          initial="initial"
+          whileHover="hover"
+          animate="exit"
+          className="w-full min-w-container-300 max-w-container-600 cursor-pointer p-16P rounded-5BR font-bold tracking-wide text-white bg-green-dark hover:text-background-dark hover:bg-warning"
         >
-          ← Back Home
-        </Link>
+          <Link href="/">Go Home</Link>
+        </motion.button>
       </footer>
     </article>
   );
