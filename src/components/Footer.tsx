@@ -51,10 +51,18 @@ const Footer = () => {
         </h2>
         <div className="flex justify-around items-center gap-10">
           {/* LINKS A BIT ROTATED WHEN HOVERED */}
-          <Link target="_blank" href="wings-website" passHref>
+          <Link
+            target="_blank"
+            href="https://next-wings.onrender.com/"
+            passHref
+          >
             <WingsLogo />
           </Link>
-          <Link target="_blank" href="my-website" passHref>
+          <Link
+            target="_blank"
+            href="https://cotaalexandru.onrender.com/"
+            passHref
+          >
             <CotaLogoFooter />
           </Link>
         </div>
