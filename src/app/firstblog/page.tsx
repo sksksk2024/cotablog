@@ -11,25 +11,25 @@ const FirstBlog = () => {
         <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight leading-tight">
           First Blog: Welcome
         </h1>
-        <p className="text-sm text-gray-400">Published on May 1, 2025</p>
+        <p className="text-sm text-gray-300">Published on May 2, 2025</p>
       </header>
 
       <section className="space-y-6 text-lg leading-relaxed">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
-          maxime voluptatibus suscipit explicabo nobis non est id facilis, in
-          delectus ipsum cumque impedit necessitatibus expedita laudantium
-          soluta ad quo voluptates?
+          I, Cota Alexandru, am writing this blog for you, the ones that are
+          curious how I can uplift my speaking and writing skills through the
+          roof.
         </p>
         <p>
-          Similique veniam ullam hic animi libero! Culpa obcaecati accusantium
-          temporibus, eveniet ex sequi enim tenetur fugiat eius? Nostrum nihil
-          culpa, quasi laborum maxime qui suscipit!
+          The reason why I started to write blogs is to share my thoughts, my
+          interests and my progress overall in these three pillars:
+          Calisthenics, Web Development, and Managing Life Well.
         </p>
         <p>
-          This is just the beginning. I&apos;m using this space to explore
-          ideas, share my journey, and document everything I&apos;m
-          learning—from calisthenics to JavaScript and beyond.
+          In this blog, you will get tips on how to make your life better, make
+          good decisions, and learn from my mistakes. I will cover the general
+          topics, and also cover in more depth, as I get better at expressing
+          myself and continue improving my writing skills.
         </p>
       </section>
 
