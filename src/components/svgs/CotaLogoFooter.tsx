@@ -6,6 +6,7 @@ import { svgVariants } from '../motionVariants/motionVariants';
 const CotaLogoFooter = () => {
   return (
     <motion.svg
+      aria-label={`Cota Alexandru's Platform`}
       version="1.0"
       xmlns="http://www.w3.org/2000/svg"
       width="696.000000pt"

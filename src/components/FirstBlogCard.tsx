@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import React from 'react';
 import successfulMe from '@/images/relaxedMe.webp';
@@ -14,7 +16,7 @@ const FirstBlogCard = () => {
           <Image
             src={successfulMe}
             className="absolute w-full h-full"
-            alt="first blog"
+            alt="Cota Alexandru's first blog"
           />
         </div>
         <div className="flex justify-center items-center w-full h-1/4 p-16P tracking-widest bg-textis text-white">
@@ -23,7 +25,13 @@ const FirstBlogCard = () => {
       </Link>
       <p className="text-center">
         Want to Subscribe? <br />{' '}
-        <span className="cursor-pointer hover:text-warning">Go Here</span>
+        <Link
+          target="_blank"
+          href={'https://cotaalexandru.onrender.com/newsletter'}
+          className="cursor-pointer hover:text-warning"
+        >
+          Go Here
+        </Link>
       </p>
     </section>
   );

@@ -10,6 +10,7 @@ const BlogCard = ({ title, href }: { title: string; href: string }) => (
   <Link
     className="flex flex-col justify-start items-center min-w-container-300 w-full max-w-container-300 h-300H bg-gray-500 cursor-pointer rounded-xl shadow-lg transition-shadow hover:scale-[0.99] hover:shadow-cyan-400/20"
     href={href}
+    aria-label={`Read more about ${title}`}
   >
     <div className="w-full h-3/4">PHOTO</div>
     <div className="flex justify-center items-center w-full h-1/4 p-16P tracking-widest bg-textis text-white">
@@ -22,7 +23,7 @@ const BlogSection = () => {
   const [search, setSearch] = useState('');
 
   const blogPosts = [
-    { title: '??', href: '/moreblogs/' },
+    { title: 'Why Calisthenics', href: 'moreblogs/lovingcalisthenics' },
     { title: '?', href: '/moreblogs/' },
     { title: '????', href: '/moreblogs/' },
     { title: '???', href: '/moreblogs/' },
@@ -42,8 +43,8 @@ const BlogSection = () => {
       {/* Search Bar */}
       <label
         className={`relative group w-full min-w-container-300 max-w-container-600`}
-        htmlFor="email"
-        aria-label="Enter Email"
+        htmlFor="searchBar"
+        aria-label="Search Blog"
       >
         <input
           className={`outline-none text-textis text-center font-bold px-32P py-8P rounded-5BR bg-snow-gray border-none w-full shadow-soft-cyan focus:shadow-hover-cyan placeholder:text-gray-400 placeholder:opacity-90 focus:outline-none focus:ring-0 focus:border-transparent group-hover:placeholder:text-gray-900
@@ -54,9 +55,10 @@ const BlogSection = () => {
           placeholder="Search blog..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
+          aria-label="Search Blog"
         />
         <div
-          aria-label="Search Blog"
+          aria-disabled
           className={`absolute top-0 right-0 bg-snow-gray rounded-5BR ring-none border-none w-40W p-8P tracking-0.1 group-hover:bg-warning`}
         >
           <Search />
