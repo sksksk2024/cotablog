@@ -21,21 +21,19 @@ const FirstBlog = () => {
         </p>
         <h2 className="text-xl underline">🏃‍♂️ From Sports to Stillness</h2>
         <p>
-          {/* why I am */}
-          {/* not good, and maybe I am not capable of It */}
-          Sports weren't an interest of mine back then! I was confused, why I
-          wasn't good, or maybe I just wasn't capable of It. I really didn't
-          think about it much, but I think this was the reason why I was feeling
-          empty. Also, I was anxious and scared to talk to people. This was
-          another barrier that didn't fulfill me.
+          Sports weren&apos;t an interest of mine back then! I was confused, why
+          I wasn&apos;t good, or maybe I just wasn&apos;t capable of It. I
+          really didn&apos;t think about it much, but I think this was the
+          reason why I was feeling empty. Also, I was anxious and scared to talk
+          to people. This was another barrier that didn&apos;t fulfill me.
         </p>
         <p>
           I did a lot of sports: swimming - 1 yr, judo - 1 yr, modern dancing -
           3 yrs, football - 1 mt, basketball - 7 yrs. Even though I practiced
           them well, I was in the present moment and I got guided to all these
-          fantastic coaches, though I didn't think for myself one second at
-          least. I wasn't feeling I was doing something, and I wasn't driven to
-          any of these in special.
+          fantastic coaches, though I didn&apos;t think for myself one second at
+          least. I wasn&apos;t feeling I was doing something, and I wasn&apos;t
+          driven to any of these in special.
         </p>
         <p>
           When the pandemic struck, this was my &apos;perfect&apos; excuse to
@@ -46,12 +44,12 @@ const FirstBlog = () => {
         <h2 className="text-xl underline">💪 Discovering Calisthenics</h2>
         <p>
           One day, I discovered Calisthenics - on December 31, 2021. It&apos;s
-          not lifting weights, which I don't like to do. Instead, you lift
+          not lifting weights, which I don&apos;t like to do. Instead, you lift
           yourself up, down, sideways, in the air, and so on. This way of
-          physical activity made me curious: It's like gymnastics, and I love
-          being capable to do with my body anything I want. Since I was a kid, I
-          said to myself that it is impossible to do cartwheel, or flips. I
-          started slowly to get more info about variations of pushups, and how
+          physical activity made me curious: It&apos;s like gymnastics, and I
+          love being capable to do with my body anything I want. Since I was a
+          kid, I said to myself that it is impossible to do cartwheel, or flips.
+          I started slowly to get more info about variations of pushups, and how
           to progress fast - sleep well, eat well.
         </p>
         <p>
