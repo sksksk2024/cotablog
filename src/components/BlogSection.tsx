@@ -24,7 +24,10 @@ const BlogSection = () => {
 
   const blogPosts = [
     { title: 'Why Calisthenics', href: 'moreblogs/lovingcalisthenics' },
-    { title: '?', href: '/moreblogs/' },
+    {
+      title: 'My Winning Condition: Web Development',
+      href: '/moreblogs/lovingwebdevelopment',
+    },
     { title: '????', href: '/moreblogs/' },
     { title: '???', href: '/moreblogs/' },
     // Add more as needed
