@@ -13,7 +13,7 @@ const BlogCard = ({ title, href }: { title: string; href: string }) => (
     aria-label={`Read more about ${title}`}
   >
     <div className="w-full h-3/4">PHOTO</div>
-    <div className="flex justify-center items-center w-full h-1/4 p-16P tracking-widest bg-textis text-white">
+    <div className="flex justify-center items-center w-full h-1/4 p-16P tracking-widest bg-textis text-center text-white">
       <h2 className="text-lg font-bold mx-auto">{title}</h2>
     </div>
   </Link>
@@ -28,7 +28,7 @@ const BlogSection = () => {
       title: 'My Winning Condition: Web Development',
       href: '/moreblogs/lovingwebdevelopment',
     },
-    { title: '????', href: '/moreblogs/' },
+    { title: 'How I Set Up Goals', href: '/moreblogs/settinggoals' },
     { title: '???', href: '/moreblogs/' },
     // Add more as needed
   ];
