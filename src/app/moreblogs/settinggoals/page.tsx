@@ -22,9 +22,9 @@ const SettingGoals = () => {
         <p>
           These days, we have a lot of options: be a teacher, policeman,
           athlete, seller, etc. We live once, and life is not that long. Here is
-          something interesting: one day, I simply thought, "I want to play
-          Roblox". I didn&apos;t think about there are other things I could do.
-          I just did it, and committed to that thing. I remember like it was
+          something interesting: one day, I simply thought, &quot;I want to play
+          Roblox&quot;. I didn&apos;t think about there are other things I could
+          do. I just did it, and committed to that thing. I remember like it was
           last week. I was a 10-year-old who started playing Roblox all day. I
           enjoyed those times so much that I still remember all my
           accomplishments on the platform.
@@ -70,10 +70,10 @@ const SettingGoals = () => {
           of smoking - he won&apos;t believe them deeply, until something
           serious happens to him. Sadly, that&apos;s how it works for many. So,
           just get information, and stay open-minded. Tell yourself honestly:
-          "This habit is not good because ..." or "This is a good habit, and it
-          makes me feel .... Once you start thinking like that, in my case, it
-          becomes simple to step away from bad routines. Also, keeping a
-          positive attitude makes everything easier.
+          &quot;This habit is not good because ...&quot; or &quot;This is a good
+          habit, and it makes me feel ...&quot;. Once you start thinking like
+          that, in my case, it becomes simple to step away from bad routines.
+          Also, keeping a positive attitude makes everything easier.
         </p>
         <h2 className="text-xl underline">🏁 Conclusion</h2>
         <p>
