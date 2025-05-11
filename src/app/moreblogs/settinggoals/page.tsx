@@ -23,9 +23,9 @@ const SettingGoals = () => {
           These days, we have a lot of options: be a teacher, policeman,
           athlete, seller, etc. We live once, and life is not that long. Here is
           something interesting: one day, I simply thought, "I want to play
-          Roblox". I didn't think about there are other things I could do. I
-          just did it, and committed to that thing. I remember like it was last
-          week. I was a 10-year-old who started playing Roblox all day. I
+          Roblox". I didn&apos;t think about there are other things I could do.
+          I just did it, and committed to that thing. I remember like it was
+          last week. I was a 10-year-old who started playing Roblox all day. I
           enjoyed those times so much that I still remember all my
           accomplishments on the platform.
           <ul className="list-disc list-inside space-y-2">
@@ -39,40 +39,41 @@ const SettingGoals = () => {
         </p>
         <h2 className="text-xl underline">🎮 What I Learned from Roblox</h2>
         <p>
-          My Roblox experience doesn't align with who I am right now, and I am
-          still proud of what I did. I learned that: energy is essential to
+          My Roblox experience doesn&apos;t align with who I am right now, and I
+          am still proud of what I did. I learned that: energy is essential to
           making dreams come true, how to control my emotions when I lose, to
-          play with more people, because it's more fun, to not get discouraged
-          when things do not go as planned, and to focus on one thing when you
-          really want to become great at it! A lot of golden advice that, as
-          future self, I am grateful I learned them then.
+          play with more people, because it&apos;s more fun, to not get
+          discouraged when things do not go as planned, and to focus on one
+          thing when you really want to become great at it! A lot of golden
+          advice that, as future self, I am grateful I learned them then.
         </p>
         <h2 className="text-xl underline">
           💥 How I Attacked 2 Bad Habits at Once
         </h2>
         <p>
           I still wonder why I changed my future direction so easily! In the
-          past, I thought it was because there weren't any Roblox competitions
-          in my country, and even now, after 4 years. Right now, I believe it
-          was because I started to think health is better than anything. So, I
-          dropped my gaming habit and started Calisthenics. I wanted to feel
-          strong, and incredible when I wake up. Also, when I was feeling
-          horible for a few days - because I had been eating chips and rods
-          every day for a while - I completely deleted them from my diet. I was
-          serious about myself, and the results didn't take long to show up.
+          past, I thought it was because there weren&apos;t any Roblox
+          competitions in my country, and even now, after 4 years. Right now, I
+          believe it was because I started to think health is better than
+          anything. So, I dropped my gaming habit and started Calisthenics. I
+          wanted to feel strong, and incredible when I wake up. Also, when I was
+          feeling horible for a few days - because I had been eating chips and
+          rods every day for a while - I completely deleted them from my diet. I
+          was serious about myself, and the results didn&apos;t take long to
+          show up.
         </p>
         <h2 className="text-xl underline">💡 My Advice</h2>
         <p>
-          You won't stop a habit, only when you know it makes you feel bad or
-          unhealthy. Take one of my family members as an example: he says
-          smoking calms him down. You can't tell him all the disadvantages of
-          smoking - he won't believe them deeply, until something serious
-          happens to him. Sadly, that's how it works for many. So, just get
-          information, and stay open-minded. Tell yourself honestly: "This habit
-          is not good because ..." or "This is a good habit, and it makes me
-          feel .... Once you start thinking like that, in my case, it becomes
-          simple to step away from bad routines. Also, keeping a positive
-          attitude makes everything easier.
+          You won&apos;t stop a habit, only when you know it makes you feel bad
+          or unhealthy. Take one of my family members as an example: he says
+          smoking calms him down. You can&apos;t tell him all the disadvantages
+          of smoking - he won&apos;t believe them deeply, until something
+          serious happens to him. Sadly, that&apos;s how it works for many. So,
+          just get information, and stay open-minded. Tell yourself honestly:
+          "This habit is not good because ..." or "This is a good habit, and it
+          makes me feel .... Once you start thinking like that, in my case, it
+          becomes simple to step away from bad routines. Also, keeping a
+          positive attitude makes everything easier.
         </p>
         <h2 className="text-xl underline">🏁 Conclusion</h2>
         <p>
