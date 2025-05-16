@@ -3,8 +3,8 @@ import { Toaster } from 'react-hot-toast';
 import './globals.css';
 
 export const metadata = {
-  title: `Cota Alexandru's website`,
-  description: `Cota Alexandru's playground from where you can learn new things, play minigames, and know me better! Have a good time here! 😊`,
+  title: `Cota Alexandru's Blog`,
+  description: `Real stories of my highs and lows, and a mindset you won't regret incorporating! 😊`,
 };
 
 export default function RootLayout({

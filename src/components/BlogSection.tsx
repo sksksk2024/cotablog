@@ -29,7 +29,7 @@ const BlogSection = () => {
       href: '/moreblogs/lovingwebdevelopment',
     },
     { title: 'How I Set Up Goals', href: '/moreblogs/settinggoals' },
-    { title: '???', href: '/moreblogs/' },
+    { title: 'Distractions', href: '/moreblogs/distractions' },
     // Add more as needed
   ];
 
