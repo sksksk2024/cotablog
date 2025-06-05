@@ -1,3 +1,4 @@
+// src/app/blog/[slug]/page.tsx
 import fs from 'fs/promises';
 import path from 'path';
 import { notFound } from 'next/navigation';
@@ -14,28 +15,17 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
   }));
 }
 
-// ✅ Use inline typing here
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  return {
-    title: params.slug,
-  };
+// Note: we accept a single `props` parameter here, and type it.
+//       This both satisfies Next.js’s inferred type and avoids `any`.
+export async function generateMetadata(props: { params: { slug: string } }) {
+  const slug = props.params.slug;
+  return { title: slug };
 }
 
-// ✅ Inline typing in the page component too
-export default async function BlogPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const filePath = path.join(
-    process.cwd(),
-    'content/blog',
-    `${params.slug}.mdx`
-  );
+// Same trick for the page component: accept `props` instead of destructuring.
+export default async function BlogPage(props: { params: { slug: string } }) {
+  const slug = props.params.slug;
+  const filePath = path.join(process.cwd(), 'content/blog', `${slug}.mdx`);
 
   try {
     const raw = await fs.readFile(filePath, 'utf8');
@@ -44,9 +34,7 @@ export default async function BlogPage({
     const { content: mdxContent } = await compileMDX({
       source: content,
       options: { parseFrontmatter: false },
-      components: {
-        FooterButton,
-      },
+      components: { FooterButton },
     });
 
     return (
@@ -57,7 +45,7 @@ export default async function BlogPage({
       </article>
     );
   } catch (error) {
-    console.error('You have an error you need to solve:', error);
+    console.error('Error in page generation:', error);
     notFound();
   }
 }
