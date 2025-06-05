@@ -5,6 +5,12 @@ import matter from 'gray-matter';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import FooterButton from '@/components/FooterButton';
 
+type PageProps = {
+  params: {
+    slug: string;
+  };
+};
+
 // Used by Next.js to statically generate pages
 export async function generateStaticParams() {
   const dir = path.join(process.cwd(), 'content/blog');
@@ -16,22 +22,14 @@ export async function generateStaticParams() {
 }
 
 // Metadata function with correct param typing
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export async function generateMetadata({ params }: PageProps) {
   return {
     title: params.slug,
   };
 }
 
 // Page component with correct param typing
-export default async function BlogPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default async function BlogPage({ params }: PageProps) {
   const filePath = path.join(
     process.cwd(),
     'content/blog',
