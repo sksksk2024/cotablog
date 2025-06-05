@@ -2,35 +2,42 @@ import fs from 'fs/promises';
 import path from 'path';
 import { notFound } from 'next/navigation';
 import matter from 'gray-matter';
-import { compileMDX } from 'next-mdx-remote/rsc'; // new method
+import { compileMDX } from 'next-mdx-remote/rsc';
 import FooterButton from '@/components/FooterButton';
 
-type BlogProps = {
-  params: {
-    slug: string;
-  };
-};
-
+// Used by Next.js to statically generate pages
 export async function generateStaticParams() {
   const dir = path.join(process.cwd(), 'content/blog');
   const files = await fs.readdir(dir);
+
   return files.map((file) => ({
     slug: file.replace(/\.mdx$/, ''),
   }));
 }
 
-export async function generateMetadata({ params }: BlogProps) {
+// Metadata function with correct param typing
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}) {
   return {
     title: params.slug,
   };
 }
 
-export default async function BlogPage({ params }: BlogProps) {
+// Page component with correct param typing
+export default async function BlogPage({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const filePath = path.join(
     process.cwd(),
     'content/blog',
     `${params.slug}.mdx`
   );
+
   try {
     const raw = await fs.readFile(filePath, 'utf8');
     const { content, data } = matter(raw);
