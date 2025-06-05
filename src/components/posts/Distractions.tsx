@@ -28,11 +28,11 @@ const Distractions = () => {
           hardest one for me to give up, even today. The idea of making yourself
           think music gives energy or makes you happy is a vicious trap. I love
           music, but when I listen to It all day, It has become an addiction, It
-          gives me bad times. It's not ideal to put music before bed, or put it
-          loud to hear all your neighbours. Music has started to control me, in
-          every aspect of life. About Social Media, when I have started It, a
-          feeling of missing out had developed inside me. I was feeling worse
-          than before, when I started to think that everybody was doing
+          gives me bad times. It&apos;s not ideal to put music before bed, or
+          put it loud to hear all your neighbours. Music has started to control
+          me, in every aspect of life. About Social Media, when I have started
+          It, a feeling of missing out had developed inside me. I was feeling
+          worse than before, when I started to think that everybody was doing
           incredible stuff, and me not. Once I realized I was doing the wrong
           thing, comparing myself and feeling unmotivated. I refused, in the
           bottom of my heart, to believe in this way, which made me feel more
@@ -46,7 +46,7 @@ const Distractions = () => {
           thinking about everything, going a step back, and analyse posible
           mistakes have tremendously improved my qualities while I am facing a
           challange. When you can be able to see in your head why you get
-          interrupted and why you didn't get the result you want, with more
+          interrupted and why you didn&apos;t get the result you want, with more
           attempts, you start to observe patterns. These patterns make you
           unstoppable, like you have unlimited chances: when you get interrupted
           once again, you start increasing your voice, or beat him up, or tell

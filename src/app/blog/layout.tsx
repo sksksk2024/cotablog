@@ -7,7 +7,7 @@ export default function BlogLayout({
   return (
     <div className="min-h-screen">
       <header className="p-4 text-center font-bold">
-        Cota Alexandru's Blog
+        Cota Alexandru&apos;s Blog
       </header>
       {children}
     </div>

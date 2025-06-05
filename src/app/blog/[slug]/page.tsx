@@ -50,7 +50,8 @@ export default async function BlogPage({ params }: BlogProps) {
         {mdxContent}
       </article>
     );
-  } catch (e) {
+  } catch (error) {
+    console.error('You have an error you need to solve:', error);
     notFound();
   }
 }

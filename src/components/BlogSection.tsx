@@ -6,13 +6,23 @@ import { motion } from 'framer-motion';
 import { buttonVariants } from '@/components/motionVariants/motionVariants';
 import Search from './svgs/Search';
 
-const BlogCard = ({ title, href }: { title: string; href: string }) => (
+const BlogCard = ({
+  title,
+  href,
+  emoji,
+}: {
+  title: string;
+  href: string;
+  emoji: string;
+}) => (
   <Link
     className="flex flex-col justify-start items-center min-w-container-300 w-full max-w-container-300 h-300H bg-gray-500 cursor-pointer rounded-xl shadow-lg transition-shadow hover:scale-[0.99] hover:shadow-cyan-400/20"
     href={href}
     aria-label={`Read more about ${title}`}
   >
-    <div className="w-full h-3/4">PHOTO</div>
+    <div className="w-full h-3/4 flex items-center justify-center text-9xl">
+      {emoji}
+    </div>
     <div className="flex justify-center items-center w-full h-1/4 p-16P tracking-widest bg-textis text-center text-white">
       <h2 className="text-lg font-bold mx-auto">{title}</h2>
     </div>
@@ -23,21 +33,26 @@ const BlogSection = () => {
   const [search, setSearch] = useState('');
 
   const blogPosts = [
-    { title: 'Why Calisthenics', href: '/blog/lovingcalisthenics' },
+    {
+      title: 'Why Calisthenics',
+      href: '/blog/lovingcalisthenics',
+      emoji: '🏋️',
+    },
     {
       title: 'My Winning Condition: Web Development',
       href: '/blog/lovingwebdevelopment',
+      emoji: '💻',
     },
     {
       title: 'How I Set Up Goals',
       href: '/blog/settinggoals',
+      emoji: '🎯',
     },
+    { title: 'Distractions', href: '/blog/distractions', emoji: '🙉' },
     // {
     //   title: 'My Winning Condition: Web Development',
     //   href: '/blog/lovingwebdevelopment',
     // },
-    { title: 'Distractions', href: '/blog/distractions' },
-    // Add more as needed
   ];
 
   const filteredPosts = blogPosts.filter((post) =>
@@ -79,7 +94,12 @@ const BlogSection = () => {
       <section className="grid xs:grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-20 place-items-center place-content-center max-w-container-1440">
         {filteredPosts.length > 0 ? (
           filteredPosts.map((post, idx) => (
-            <BlogCard key={idx} title={post.title} href={post.href} />
+            <BlogCard
+              key={idx}
+              title={post.title}
+              href={post.href}
+              emoji={post.emoji}
+            />
           ))
         ) : (
           <p className="text-white col-span-full">No results found.</p>
