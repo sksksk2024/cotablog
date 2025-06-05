@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "postinstall": "prisma generate",
     "prisma:deploy": "prisma migrate deploy",
     "lint": "next lint"
   },
@@ -40,7 +39,6 @@
     "next": "15.2.4",
     "next-auth": "^4.24.11",
     "next-mdx-remote": "^5.0.0",
-    "prisma": "^6.6.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.5.2",

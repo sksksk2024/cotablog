@@ -5,7 +5,7 @@ import matter from 'gray-matter';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import FooterButton from '@/components/FooterButton';
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const dir = path.join(process.cwd(), 'content/blog');
   const files = await fs.readdir(dir);
 
