@@ -1,8 +1,5 @@
 // src/app/blog/[slug]/page.tsx
 
-// @ts-nocheck
-// (We rely on Next.js’s built-in inference for both `params` and return types.)
-
 import fs from 'fs/promises';
 import path from 'path';
 import { notFound } from 'next/navigation';
@@ -10,7 +7,7 @@ import matter from 'gray-matter';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import FooterButton from '@/components/FooterButton';
 
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const dir = path.join(process.cwd(), 'content/blog');
   const files = await fs.readdir(dir);
 
@@ -20,13 +17,14 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  return {
-    title: params.slug,
-  };
+  // In Next 15, `params` is a Promise, so we await it:
+  const { slug } = await params;
+  return { title: slug };
 }
 
 export default async function BlogPage({ params }) {
-  const slug = params.slug;
+  // Again, `params` is a Promise<{ slug: string }>:
+  const { slug } = await params;
   const filePath = path.join(process.cwd(), 'content/blog', `${slug}.mdx`);
 
   try {
