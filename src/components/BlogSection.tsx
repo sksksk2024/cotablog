@@ -23,13 +23,20 @@ const BlogSection = () => {
   const [search, setSearch] = useState('');
 
   const blogPosts = [
-    { title: 'Why Calisthenics', href: 'moreblogs/lovingcalisthenics' },
+    { title: 'Why Calisthenics', href: '/blog/lovingcalisthenics' },
     {
       title: 'My Winning Condition: Web Development',
-      href: '/moreblogs/lovingwebdevelopment',
+      href: '/blog/lovingwebdevelopment',
     },
-    { title: 'How I Set Up Goals', href: '/moreblogs/settinggoals' },
-    { title: 'Distractions', href: '/moreblogs/distractions' },
+    {
+      title: 'How I Set Up Goals',
+      href: '/blog/settinggoals',
+    },
+    // {
+    //   title: 'My Winning Condition: Web Development',
+    //   href: '/blog/lovingwebdevelopment',
+    // },
+    { title: 'Distractions', href: '/blog/distractions' },
     // Add more as needed
   ];
 

@@ -6,15 +6,15 @@ import Link from 'next/link';
 
 const FirstBlog = () => {
   return (
-    <article className="w-full max-w-container-800 px-16P py-48P mx-auto flex flex-col gap-10 text-white">
-      <header className="text-center space-y-4">
+    <article className="w-[100dvw] px-4 md:px-8 py-12 mx-auto flex flex-col gap-1 text-white">
+      <header className="text-start min-w-container-300 w-[100%] max-w-container-600 mx-auto mb-96M">
         <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight leading-tight">
           First Blog: Welcome
         </h1>
-        <p className="text-sm text-gray-300">Published on May 2, 2025</p>
+        <p className="mt-16M text-sm text-gray-300">Published on May 2, 2025</p>
       </header>
 
-      <section className="space-y-6 text-lg leading-relaxed">
+      <section className="text-lg min-w-container-300 w-[100%] max-w-container-600 leading-relaxed mx-auto">
         <p>
           I, Cota Alexandru, am writing this blog for you, the ones that are
           curious how I can uplift my speaking and writing skills through the
@@ -33,7 +33,7 @@ const FirstBlog = () => {
         </p>
       </section>
 
-      <footer className="flex flex-col justify-center items-center pt-10 border-t border-gray-600 text-center">
+      <footer className="mt-96M min-w-container-300 w-[100%] max-w-container-600 mx-auto">
         <motion.button
           variants={buttonVariants}
           initial="initial"

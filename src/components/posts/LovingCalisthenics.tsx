@@ -4,7 +4,7 @@ import { buttonVariants } from '@/components/motionVariants/motionVariants';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-const FirstBlog = () => {
+const LovingCalisthenics = () => {
   return (
     <article className="w-full max-w-container-800 px-16P py-48P mx-auto flex flex-col gap-10 text-white">
       <header className="text-center space-y-4">
@@ -98,4 +98,4 @@ const FirstBlog = () => {
   );
 };
 
-export default FirstBlog;
+export default LovingCalisthenics;

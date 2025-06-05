@@ -523,5 +523,9 @@ module.exports = {
       },
     },
   },
-  plugins: [daisyui, require('tailwindcss-animate')],
+  plugins: [
+    daisyui,
+    require('tailwindcss-animate'),
+    require('@tailwindcss/typography'),
+  ],
 };

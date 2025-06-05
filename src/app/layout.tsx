@@ -1,6 +1,5 @@
-// import { Providers } from '@/components/Providers';
-import { Toaster } from 'react-hot-toast';
 import './globals.css';
+// import ClientWrapper from '@/components/ClientWrapper';
 
 export const metadata = {
   title: `Cota Alexandru's Blog`,
@@ -25,7 +24,6 @@ export default function RootLayout({
       </head>
       <body className={`antialiased relative bg-background-dark`}>
         {children}
-        <Toaster position="top-right" reverseOrder={false} />
       </body>
     </html>
   );

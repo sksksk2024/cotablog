@@ -4,7 +4,7 @@ import { buttonVariants } from '@/components/motionVariants/motionVariants';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-const FirstBlog = () => {
+const Distractions = () => {
   return (
     <article className="w-full max-w-container-800 px-16P py-48P mx-auto flex flex-col gap-10 text-white">
       <header className="text-center space-y-4">
@@ -30,7 +30,7 @@ const FirstBlog = () => {
           music, but when I listen to It all day, It has become an addiction, It
           gives me bad times. It's not ideal to put music before bed, or put it
           loud to hear all your neighbours. Music has started to control me, in
-          every aspect of life. About Socials Media, when I have started It, a
+          every aspect of life. About Social Media, when I have started It, a
           feeling of missing out had developed inside me. I was feeling worse
           than before, when I started to think that everybody was doing
           incredible stuff, and me not. Once I realized I was doing the wrong
@@ -79,6 +79,14 @@ const FirstBlog = () => {
         </p>
       </section>
 
+      <section className="mt-10">
+        <h2 className="text-xl font-semibold mb-4">Watch the Video</h2>
+        <video controls className="w-full rounded-xl shadow-lg">
+          <source src="/videos/distractions.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </section>
+
       <footer className="flex flex-col justify-center items-center pt-10 border-t border-gray-600 text-center">
         <motion.button
           variants={buttonVariants}
@@ -94,4 +102,4 @@ const FirstBlog = () => {
   );
 };
 
-export default FirstBlog;
+export default Distractions;

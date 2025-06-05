@@ -56,7 +56,7 @@ const Guide = () => {
             initial="hidden"
             whileHover="hover"
           >
-            <Link href={'/moreblogs'} className={contentClasses}>
+            <Link href={'/blog'} className={contentClasses}>
               More Blogs
             </Link>
           </motion.li>
