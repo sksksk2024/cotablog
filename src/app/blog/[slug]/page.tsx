@@ -17,6 +17,7 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
 }
 
 // @ts-expect-error
+// @typescript-eslint/ban-ts-comment Doesn't have a type
 export async function generateMetadata({ params }) {
   // In Next 15, `params` is a Promise, so we await it:
   const { slug } = await params;
@@ -24,6 +25,7 @@ export async function generateMetadata({ params }) {
 }
 
 // @ts-expect-error
+// @typescript-eslint/ban-ts-comment Doesn't have a type
 export default async function BlogPage({ params }) {
   // Again, `params` is a Promise<{ slug: string }>:
   const { slug } = await params;
