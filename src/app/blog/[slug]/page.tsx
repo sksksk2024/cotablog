@@ -16,14 +16,14 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
   }));
 }
 
-// @ts-ignore
+// @ts-expect-error
 export async function generateMetadata({ params }) {
   // In Next 15, `params` is a Promise, so we await it:
   const { slug } = await params;
   return { title: slug };
 }
 
-// @ts-ignore
+// @ts-expect-error
 export default async function BlogPage({ params }) {
   // Again, `params` is a Promise<{ slug: string }>:
   const { slug } = await params;
