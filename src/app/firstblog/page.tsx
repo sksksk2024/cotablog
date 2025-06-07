@@ -16,7 +16,7 @@ const FirstBlog = () => {
 
       <section className="text-lg min-w-container-300 w-[100%] max-w-container-600 leading-relaxed mx-auto">
         <p>
-          I, Cota Alexandru, am writing this blog for you, the ones that are
+          I, Coța Alexandru, am writing this blog for you, the ones that are
           curious how I can uplift my speaking and writing skills through the
           roof.
         </p>

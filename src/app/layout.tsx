@@ -2,7 +2,7 @@ import './globals.css';
 // import ClientWrapper from '@/components/ClientWrapper';
 
 export const metadata = {
-  title: `Cota Alexandru's Blog`,
+  title: `Coța Alexandru's Blog`,
   description: `Real stories of my highs and lows, and a mindset you won't regret incorporating! 😊`,
 };
 

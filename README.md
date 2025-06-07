@@ -1,4 +1,4 @@
-# Cota Alexandru's Blog
+# Coța Alexandru's Blog
 
 ## Table of Contents
 

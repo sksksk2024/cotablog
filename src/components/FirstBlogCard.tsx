@@ -16,7 +16,7 @@ const FirstBlogCard = () => {
           <Image
             src={successfulMe}
             className="absolute w-full h-full"
-            alt="Cota Alexandru's first blog"
+            alt="Coța Alexandru's first blog"
           />
         </div>
         <div className="flex justify-center items-center w-full h-1/4 p-16P tracking-widest bg-textis text-white">
