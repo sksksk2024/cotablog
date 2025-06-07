@@ -16,16 +16,14 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
   }));
 }
 
-// @ts-expect-error
-// @typescript-eslint/ban-ts-comment Doesn't have a type
+// @ts-expect-error - no type defined for params from Next.js
 export async function generateMetadata({ params }) {
   // In Next 15, `params` is a Promise, so we await it:
   const { slug } = await params;
   return { title: slug };
 }
 
-// @ts-expect-error
-// @typescript-eslint/ban-ts-comment Doesn't have a type
+// @ts-expect-error - no type defined for params from Next.js
 export default async function BlogPage({ params }) {
   // Again, `params` is a Promise<{ slug: string }>:
   const { slug } = await params;
